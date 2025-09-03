@@ -1,11 +1,14 @@
-# stats.rb
 require "bundler/setup"
 require "descriptive_statistics"
 
-data = [5, 10, 10, 20, 25, 30]
+require_relative "is_valid"
+require_relative "calculate"
+require_relative "read_data"
 
-puts "Data: #{data}"
-puts "Mean: #{data.mean}"
-puts "МMedian: #{data.median}"
-puts "Mode: #{data.mode}"
-puts "Standart deviation: #{data.standard_deviation.round(2)}"
+data = read_data
+
+if is_valid? data
+    calculate(data)
+else
+    puts 'Problems with array!'
+end
