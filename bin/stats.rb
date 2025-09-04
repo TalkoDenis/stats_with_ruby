@@ -1,9 +1,9 @@
 require "bundler/setup"
 require "descriptive_statistics"
 
-require_relative "is_valid"
-require_relative "calculate"
-require_relative "read_data"
+require_relative "../lib/stats_with_ruby/is_valid"
+require_relative "../lib/stats_with_ruby/calculate"
+require_relative "../lib/stats_with_ruby/read_data"
 
 data = read_data
 
