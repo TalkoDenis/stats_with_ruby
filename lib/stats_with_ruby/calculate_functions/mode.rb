@@ -6,5 +6,5 @@ def mode(array)
     end
     max_freq = nil
     freq.each_value { |v| max_freq = v if max_freq.nil? || v > max_freq }
-    freq.select { |_, v| v == max_freq }.keys
+    freq.select { |_, v| v == max_freq }.keys.first
 end

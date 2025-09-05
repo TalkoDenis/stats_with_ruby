@@ -4,7 +4,7 @@ It is just simple stats library in Ruby.
 
 ## Install
 
-To bild and make gem:
+To build and make gem:
 
 ```bash
 gem build stats_with_ruby.gemspec
