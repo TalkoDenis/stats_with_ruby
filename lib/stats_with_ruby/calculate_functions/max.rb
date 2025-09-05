@@ -1,4 +1,4 @@
-def maximum(array)
+def max(array)
     max_value = array[0]
     array.each do |x|
       max = x if x > max_value

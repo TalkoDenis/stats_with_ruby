@@ -1,5 +1,7 @@
+require_relative "../lib/stats_with_ruby/calculate_functions/merge_sort"
+
 def median(array)
-    sorted = array.sort  # сортировку на "чистом Руби" тоже можно руками написать
+    sorted = merge_sort(array)
     n = sorted.size
     if n % 2 == 1
       sorted[n / 2]
