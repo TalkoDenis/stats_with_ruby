@@ -1,4 +1,5 @@
-require_relative "../lib/stats_with_ruby/calculate_functions/sqrt"
+require_relative "calculate_functions/sqrt"
+require_relative "calculate_functions/variance"
 
 def standard_deviation(array)
     sqrt(variance(array))

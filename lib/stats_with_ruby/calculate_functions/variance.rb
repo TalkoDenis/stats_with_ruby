@@ -1,3 +1,5 @@
+require_relative "calculate_functions/mean"
+
 def variance(array)
     m = mean(array)
     total = 0.0

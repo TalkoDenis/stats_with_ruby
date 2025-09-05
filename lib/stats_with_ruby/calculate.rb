@@ -1,3 +1,12 @@
+require_relative "../lib/stats_with_ruby/calculate_functions/mean"
+require_relative "../lib/stats_with_ruby/calculate_functions/median"
+require_relative "../lib/stats_with_ruby/calculate_functions/sum"
+require_relative "../lib/stats_with_ruby/calculate_functions/mode"
+require_relative "../lib/stats_with_ruby/calculate_functions/sqrt"
+require_relative "../lib/stats_with_ruby/calculate_functions/variance"
+require_relative "../lib/stats_with_ruby/calculate_functions/range"
+require_relative "../lib/stats_with_ruby/calculate_functions/standard_deviation"
+
 def calculate(data)
     puts "Data: #{data}"
     puts "Mean: #{data.mean.round(2)}"

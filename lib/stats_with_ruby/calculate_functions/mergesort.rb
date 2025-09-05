@@ -1,14 +1,4 @@
-def merge_sort(array)
-    return array if array.size <= 1
-  
-    mid = array.size / 2
-    left = merge_sort(array[0...mid])
-    right = merge_sort(array[mid..-1])
-  
-    merge(left, right)
-  end
-
-  def merge(left, right)
+def merge(left, right)
     result = []
     i = j = 0
   
@@ -34,3 +24,12 @@ def merge_sort(array)
     result
 end
   
+def merge_sort(array)
+    return array if array.size <= 1
+  
+    mid = array.size / 2
+    left = merge_sort(array[0...mid])
+    right = merge_sort(array[mid..-1])
+  
+    merge(left, right)
+end
