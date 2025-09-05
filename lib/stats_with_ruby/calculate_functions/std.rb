@@ -1,5 +1,5 @@
-require_relative "calculate_functions/sqrt"
-require_relative "calculate_functions/variance"
+require_relative "sqrt"
+require_relative "variance"
 
 def standard_deviation(array)
     sqrt(variance(array))

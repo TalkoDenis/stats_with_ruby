@@ -1,4 +1,4 @@
-require_relative "calculate_functions/mean"
+require_relative "mean"
 
 def variance(array)
     m = mean(array)

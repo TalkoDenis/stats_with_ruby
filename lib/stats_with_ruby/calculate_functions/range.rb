@@ -1,5 +1,5 @@
-require_relative "calculate_functions/min"
-require_relative "calculate_functions/max"
+require_relative "min"
+require_relative "max"
 
 def range(array)
     max(array) - min(array)

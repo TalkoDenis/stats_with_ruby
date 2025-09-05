@@ -1,4 +1,4 @@
-require_relative "calculate_functions/merge_sort"
+require_relative "merge_sort"
 
 def median(array)
     sorted = merge_sort(array)
