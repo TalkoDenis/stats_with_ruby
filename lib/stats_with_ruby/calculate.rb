@@ -1,12 +1,6 @@
-require_relative 'calculate_functions/mean'
-require_relative 'calculate_functions/min'
-require_relative 'calculate_functions/max'
-require_relative 'calculate_functions/median'
-require_relative 'calculate_functions/sum'
-require_relative 'calculate_functions/mode'
-require_relative 'calculate_functions/variance'
-require_relative 'calculate_functions/range'
-require_relative 'calculate_functions/std'
+Dir[File.join(__dir__, 'calculate_functions', '*.rb')].each do |file|
+  require_relative file
+end
 
 def calculate(data)
   puts "Data: #{data}"
