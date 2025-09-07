@@ -7,3 +7,8 @@ source "https://rubygems.org"
 gem "descriptive_statistics"
 
 gem "rspec"
+
+group :development do
+  gem "rubocop", require: false
+  gem "rubocop-rspec", require: false
+end
