@@ -1,8 +1,8 @@
-require_relative "mean"
+require_relative 'mean'
 
 def variance(array)
-    m = mean(array)
-    total = 0.0
-    array.each { |x| total += (x - m) * (x - m) }
-    total / array.size
+  m = mean(array)
+  total = 0.0
+  array.each { |x| total += (x - m) * (x - m) }
+  total / array.size
 end

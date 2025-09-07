@@ -7,7 +7,7 @@ require_relative "../lib/stats_with_ruby/read_data"
 
 data = read_data
 
-if is_valid? data
+if valid? data
     calculate(data)
 else
     puts 'Problems with array!'
